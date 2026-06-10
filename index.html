@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen - I PARCIAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>SISTEMA CONTROL DE VEHÍCULOS</h1>
+
+        <div class="formulario">
+            <div>
+                <label>Código:</label>
+                <input type="number" id="codigo" placeholder="Ingrese código del vehículo">
+            </div>
+
+            <div>
+                <label>Marca:</label>
+                <input type="text" id="marca" placeholder="Ingrese marca del vehículo">
+            </div>
+
+            <div>
+                <label>Modelo:</label>
+                <input type="text" id="modelo" placeholder="Ingrese modelo del vehículo">
+            </div>
+
+            <div>
+                <label>Año:</label>
+                <input type="number" id="año" placeholder="Ingrese año del vehículo">
+            </div>
+
+            <div>
+                <label>Precio:</label>
+                <input type="number" id="precio" placeholder="Ingrese precio del vehículo">
+            </div>
+
+        </div>
+
+        <div class="botones">
+            <button id="btnGuardar">Guardar datos <span class="carroxd">🚗</span></button>
+            <button id="btnLimpiar">Limpiar campos</button>
+        </div>
+
+        <h1><br>INVENTARIO DE VEHÍCULOS</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody id="tablaInventario"></tbody>
+        </table>
+
+        <div class="resumen">
+            <h1>RESUMEN DEL INVENTARIO</h1>
+            <h3>VEHÍCULOS REGISTRADOS: <span id="cuentaVehiculos">0</span></h3>
+            <h3>VALOR TOTAL DE INVENTARIO: <span id="totalInventario">$ 0.00</span></h3>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.6.0/jspdf.plugin.autotable.min.js"></script>
+    <script src="renderer.js"></script>
+
+</body>
+</html>
